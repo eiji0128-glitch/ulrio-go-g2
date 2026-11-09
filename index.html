@@ -4,7 +4,16 @@
 <meta name="referrer" content="origin">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>楽天市場へ移動しています</title>
-<script>location.replace("https://item.rakuten.co.jp/horiuchimirror/ulrio/");</script>
+<!-- 2026-11-09 Google広告（ayamaya AW-775976750）の「ULRIO 楽天ボタン（中継ページ go-g）」を数えてから楽天へ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-775976750"></script>
+<script>
+var R="https://item.rakuten.co.jp/horiuchimirror/ulrio/",gone=false;
+function go(){if(gone)return;gone=true;location.replace(R);}
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','AW-775976750');
+gtag('event','conversion',{'send_to':'AW-775976750/sQTuCLTi37QdEK7ugfIC','event_callback':go});
+setTimeout(go,1200);
+</script>
 <noscript><meta http-equiv="refresh" content="0;url=https://item.rakuten.co.jp/horiuchimirror/ulrio/"></noscript>
 <style>body{font-family:sans-serif;padding:40px 16px;text-align:center;color:#333;background:#fff}</style>
 </head><body><p>楽天市場へ移動しています。</p><p><a href="https://item.rakuten.co.jp/horiuchimirror/ulrio/">進まない場合はこちら</a></p></body></html>
