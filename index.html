@@ -7,7 +7,7 @@
 <!-- 2026-11-09 Google広告（ayamaya AW-775976750）の「ULRIO 楽天ボタン（中継ページ go-g）」を数えてから楽天へ -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-775976750"></script>
 <script>
-var R="https://item.rakuten.co.jp/horiuchimirror/ulrio-2/",gone=false;
+var R=Date.now()>=Date.parse("2026-12-03T20:00:00+09:00")?"https://item.rakuten.co.jp/horiuchimirror/ulrio/":"https://item.rakuten.co.jp/horiuchimirror/ulrio-2/",gone=false;
 function go(){if(gone)return;gone=true;location.replace(R);}
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','AW-775976750');
